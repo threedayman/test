@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+    <PatternLayout pattern="${CONSOLE_LOG_PATTERN}"/>
+</Console>
+

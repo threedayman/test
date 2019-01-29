@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Kafka name="KafkaAppender" syncSend="false" topic="${KAFKA_TOPIC}">
+    <JsonLayout includeStacktrace="true" stacktraceAsString="true" locationInfo="true" compact="true">
+        <KeyValuePair key="host" value="${hostName}"/>
+        <KeyValuePair key="moduleName" value="${sys:store.appname}"/>
+    </JsonLayout>
+    <Property name="bootstrap.servers">
+        ${KAFKA_SERVERS}
+    </Property>
+</Kafka>
+

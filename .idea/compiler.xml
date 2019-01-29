@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven-template-common" />
+        <module name="maven-template-console-admin" />
+        <module name="maven-template-console-api" />
+        <module name="maven-template-domain" />
+        <module name="maven-template-facade-dubbo-api" />
+        <module name="maven-template-facade-dubbo-provider" />
+        <module name="maven-template-facade-http-api" />
+        <module name="maven-template-scheduler" />
+        <module name="maven-template-service-base" />
+        <module name="maven-template-service-business" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+</project>

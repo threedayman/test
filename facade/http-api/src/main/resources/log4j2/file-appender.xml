@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RollingRandomAccessFile name="FileAppender" fileName="${LOG_PATH}/${LOG_FILE}"
+                         filePattern="${LOG_PATH}/${LOG_FILE}-%i.%d{yyyy-MM-dd-HH}.gz">
+    <PatternLayout>
+        <Pattern>${FILE_LOG_PATTERN}</Pattern>
+    </PatternLayout>
+    <Policies>
+        <TimeBasedTriggeringPolicy interval="1"
+                                   modulate="true"/>
+        <SizeBasedTriggeringPolicy size="500 MB"/>
+    </Policies>
+    <DefaultRolloverStrategy max="60">
+        <Delete basePath="${LOG_PATH}/" maxDepth="1" followLinks="true">
+            <IfFileName glob="${LOG_FILE}*.gz"/>
+            <IfLastModified age="10d"/>
+        </Delete>
+    </DefaultRolloverStrategy>
+</RollingRandomAccessFile>
+

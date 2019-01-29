@@ -1,0 +1,4 @@
+com/huangwu/domain/bo/request/UserRequest.class
+com/huangwu/domain/model/UserDO.class
+com/huangwu/domain/bo/response/UserResponse.class
+com/huangwu/domain/bo/UserBO.class
